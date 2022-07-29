@@ -1,4 +1,4 @@
-import { useWallet, WalletStatus } from '@terra-money/use-wallet';
+import { useWallet, WalletStatus } from '@palomachain/use-wallet';
 import { useCallback, useEffect, useMemo, useState } from 'react';
 
 export default function CW20TokensSample() {

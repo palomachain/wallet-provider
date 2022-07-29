@@ -1,8 +1,8 @@
-import { Coins } from '@terra-money/terra.js';
+import { Coins } from '@palomachain/paloma.js';
 import {
   ConnectedWallet,
   createLCDClient,
-} from '@terra-money/wallet-controller';
+} from '@palomachain/wallet-controller';
 import { getController } from 'controller';
 import { html, LitElement } from 'lit';
 import { customElement, state } from 'lit/decorators.js';

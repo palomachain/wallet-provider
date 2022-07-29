@@ -1,6 +1,6 @@
 # What is this?
 
-This is an example of performing basic connect, tx, and query actions in a [Lit](https://lit.dev) based web application using [wallet-provider](https://www.npmjs.com/package/@terra-money/wallet-provider).
+This is an example of performing basic connect, tx, and query actions in a [Lit](https://lit.dev) based web application using [wallet-provider](https://www.npmjs.com/package/@palomachain/wallet-provider).
 
 # Preview this template on the CodeSandbox
 

@@ -1,19 +1,19 @@
 <script lang="ts">
-  import { Connection, ConnectType, WalletStates, WalletStatus } from '@terra-money/wallet-controller';
+  import { Connection, ConnectType, WalletStates, WalletStatus } from '@palomachain/wallet-controller';
   import { getController } from 'controller';
   import { combineLatest, Subscription } from 'rxjs';
   import { onDestroy, onMount } from 'svelte';
-  
+
   const controller = getController()
-  
+
   let availableConnectTypes: ConnectType[] = [];
   let availableInstallTypes: ConnectType[] = [];
   let availableConnections: Connection[] = [];
   let states: WalletStates | null = null;
   let supportFeatures: string[] = [];
-  
+
   let subscription: Subscription | null = null;
-  
+
   onMount(() => {
     subscription = combineLatest([
       controller.availableConnectTypes(),
@@ -38,7 +38,7 @@
       },
     );
   });
-  
+
   onDestroy(() => {
     subscription?.unsubscribe();
   });

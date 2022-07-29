@@ -4,7 +4,7 @@ import {
   ConnectType,
   WalletStates,
   WalletStatus,
-} from '@terra-money/wallet-controller';
+} from '@palomachain/wallet-controller';
 import { getController } from 'controller';
 import { onMounted, onUnmounted, ref } from 'vue';
 import { Subscription, combineLatest } from 'rxjs';

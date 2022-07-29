@@ -1,7 +1,7 @@
 import {
   getChainOptions,
   WalletController,
-} from '@terra-money/wallet-controller';
+} from '@palomachain/wallet-controller';
 
 let instance: WalletController;
 

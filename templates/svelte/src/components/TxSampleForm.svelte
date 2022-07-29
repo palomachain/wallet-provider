@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { Fee, MsgSend } from '@terra-money/terra.js';
+  import { Fee, MsgSend } from '@palomachain/paloma.js';
   import {
     ConnectedWallet,
     CreateTxFailed,
@@ -8,21 +8,21 @@
     TxResult,
     TxUnspecifiedError,
     UserDenied,
-  } from '@terra-money/wallet-controller';
-  
+  } from '@palomachain/wallet-controller';
+
   const TEST_TO_ADDRESS = 'terra12hnhh5vtyg5juqnzm43970nh4fw42pt27nw9g9';
 
   export let connectedWallet: ConnectedWallet;
-  
+
   let txResult: TxResult | null = null;
   let txError: string | null = null;
-  
+
   function proceed() {
     if (connectedWallet.network.chainID.startsWith('columbus')) {
       alert(`Please only execute this example on Testnet`);
       return;
     }
-  
+
     connectedWallet
       .post({
         fee: new Fee(1000000, '200000uusd'),
@@ -54,7 +54,7 @@
         }
       });
   }
-  
+
   function clearResult() {
     txResult = null;
     txError = null;
